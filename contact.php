@@ -39,11 +39,11 @@
                     <h6 class="text-primary text-uppercase mb-2">Contact Us</h6>
                     <h1 class="display-6 mb-4">If You Have Any Query, Please Contact Us</h1>
                     <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form id="form" method="post" action="">
+                    <form action="contactform.php" method="post" id="form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control border-0 bg-light" id="name" name="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                     <div class="error"></div>
                                 </div>
@@ -73,8 +73,8 @@
                                 <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
                             </div>
                         </div>
-                           <script src="jquery-validation-1.19.5/jquery.js"></script>
-                            <script src="jquery-validation-1.19.5/jquery.validate.js"></script>
+                           <script src="js/jquery-validation-1.19.5/jquery.js"></script>
+                            <script src="js/jquery-validation-1.19.5/jquery.validate.js"></script>
                             <script>
                             $(document).ready(function () {
                                 $("#form").validate({

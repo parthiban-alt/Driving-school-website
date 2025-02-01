@@ -349,3 +349,16 @@
 .copyright a:hover {
     color: var(--light);
 }
+/*Jquery css*/
+.form-floating .error{
+	color:red;
+	text-align: center;
+	text-align:center;
+}
+.form-floating.success input{
+	border-color:green;
+}
+.form-floating.error input{
+	border-color:red;
+	text-align:center;
+}
